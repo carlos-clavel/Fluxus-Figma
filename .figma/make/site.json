@@ -1,0 +1,11 @@
+{
+  "title": "Fluxus",
+  "description": "Organize and secure student pick-up with real-time tracking, authorized validations, and detailed reports to streamline school dismissal processes.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

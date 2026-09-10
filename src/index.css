@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy-900: #0f1f3d;
+  --navy-800: #1a2f5a;
+  --navy-700: #1e3a6e;
+  --navy-600: #2a4a85;
+  --blue-500: #3b6cb7;
+  --blue-400: #5b8db8;
+  --blue-300: #89afd4;
+  --blue-100: #dce9f5;
+  --slate-500: #8fa3bc;
+  --slate-300: #c4d3e0;
+  --slate-100: #eef3f8;
+  --white: #ffffff;
+  --green-500: #22c55e;
+  --amber-500: #f59e0b;
+  --red-500: #ef4444;
+  --text-primary: #0f1f3d;
+  --text-secondary: #4a6080;
+  --text-muted: #8fa3bc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--slate-100);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbar by default, show on hover */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--slate-300);
+  border-radius: 2px;
+}
+
+.font-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.live-dot {
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+@keyframes slide-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in {
+  animation: slide-in 0.25s ease-out;
+}
+
+.status-badge-waiting { background: var(--slate-100); color: var(--text-secondary); border: 1px solid var(--slate-300); }
+.status-badge-coming { background: #fff7ed; color: #c2410c; border: 1px solid #fed7aa; }
+.status-badge-meeting { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.status-badge-out { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
